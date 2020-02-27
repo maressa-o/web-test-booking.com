@@ -13,7 +13,6 @@ namespace QATest.BookingFeature.Implementations
         
         public HotelListIMPL() { }
 
-
         public void GivenIAmInTheBookingHomePage()
         {
             StartBrowser();
@@ -113,40 +112,5 @@ namespace QATest.BookingFeature.Implementations
 
         }
 
-       /* public void ThenICheckTheIfLimerickStrandHotelAreAvaliable(string hotel)
-        {
-            var limerickHotel = browser.FindElements(By.XPath("//*[text()[contains(.,'Limerick Strand Hotel')]]")).Count() > 0;
-            if (limerickHotel)
-            {
-                Console.WriteLine("Limerick Strand Hotel is avaliable");
-            }
-            else
-            {
-                Console.WriteLine("Limerick Strand Hotel isn't avaliable");
-            }
-            
-        }
-
-        public void ThenICheckTheIfGeorgeLimerickHotelAreAvaliable(string hotel)
-        {
-            var georgeHotel = browser.FindElements(By.XPath("//*[text()[contains(.,'George Limerick Hotel')]]")).Count() == 0;
-            if (georgeHotel)
-            {
-                Console.WriteLine("George Limerick Hotel isn't avaliable");
-            }
-        }
-        
-        public void ThenICheckTheIfTheSavoyHotelAreAvaliable(string hotel)
-        {
-            var savoyHotel = browser.FindElements(By.XPath("//*[text()[contains(.,'The Savoy Hotel')]]")).Count() > 0;
-            if (savoyHotel)
-            {
-                Console.WriteLine("The Savoy Hotel is avaliable");
-            }
-            else
-            {
-                Console.WriteLine("The Savoy Hotel isn't avaliable");
-            }
-        }*/
     }
 }

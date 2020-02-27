@@ -27,7 +27,6 @@ namespace QATest.BookingFeature.Steps
             HotelList.WhenIInformAPlace();
         }
 
-
         [When(@"i select my stay period")]
         public void WhenISelectMyStayPeriod()
         {
@@ -56,18 +55,6 @@ namespace QATest.BookingFeature.Steps
         public void ThenICheckWichAreAvaliable(string hotel)
         {
             HotelList.ThenICheckWichAreAvaliable(hotel);
-
-            /*if (String.Equals(hotel, "Limerick Strand Hotel")){
-                HotelList.ThenICheckTheIfLimerickStrandHotelAreAvaliable(hotel);
-            }
-
-            if (String.Equals(hotel, "George Limerick Hotel")){
-                HotelList.ThenICheckTheIfGeorgeLimerickHotelAreAvaliable(hotel);
-            }
-
-            if (String.Equals(hotel, "Limerick Strand Hotel")){
-                HotelList.ThenICheckTheIfTheSavoyHotelAreAvaliable(hotel);
-            }*/
 
         }
     }
