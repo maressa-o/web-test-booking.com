@@ -6,21 +6,30 @@ Background:
 @Browser:Chrome @Sauna
 Scenario: Find hotels with Sauna filter on Booking 
 
-	When I inform a city 
-	And i select a Checking date 
-	And i select a Checkout date
-	And I press the Search button
+	When I inform a place 
+	And i select my stay period
+	And I do the search
 	And I select the Sauna filter
-	Then the Limerick Strand Hotel should be visible 
-	And the George Limerick Hotel should not be visible
+	Then i check wich <hotels> are avaliable
 
-@Browser:Chrome @HotelList @5Stars
+	Examples:
+
+		| hotel                 |
+		| Limerick Strand Hotel |
+		| George Limerick Hotel |
+
+@Browser:Chrome @5Stars
 Scenario: Find hotels with 5 Star filter on Booking
 
-	When I inform a city 
-	And i select a Checking date 
-	And i select a Checkout date
-	And I press the Search button
+	When I inform a place 
+	And i select my stay period
+	And I do the search
 	And I select the 5 Star filter
-	Then the Limerick Strand Hotel should be visible 
-	And the George Limerick Hotel should not be visible
+	Then i check wich <hotels> are avaliable
+
+	Examples:
+
+		| hotel                 |
+		| The Savoy Hotel       |
+		| George Limerick Hotel |
+		

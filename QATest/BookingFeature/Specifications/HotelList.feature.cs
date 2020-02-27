@@ -100,19 +100,17 @@ namespace QATest.BookingFeature.Specifications
 #line hidden
         }
         
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Find hotels with Sauna filter on Booking")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "This story represents the user\'s search flow in the Booking site.")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Browser:Chrome")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Sauna")]
-        public virtual void FindHotelsWithSaunaFilterOnBooking()
+        public virtual void FindHotelsWithSaunaFilterOnBooking(string hotel, string[] exampleTags)
         {
-            string[] tagsOfScenario = new string[] {
+            string[] @__tags = new string[] {
                     "Browser:Chrome",
                     "Sauna"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Find hotels with Sauna filter on Booking", null, new string[] {
-                        "Browser:Chrome",
-                        "Sauna"});
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Find hotels with Sauna filter on Booking", null, @__tags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -137,47 +135,64 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.When("I inform a city", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I inform a place", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
- testRunner.And("i select a Checking date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("i select my stay period", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
- testRunner.And("i select a Checkout date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I do the search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.And("I press the Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 13
  testRunner.And("I select the Sauna filter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 14
- testRunner.Then("the Limerick Strand Hotel should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 15
- testRunner.And("the George Limerick Hotel should not be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 13
+ testRunner.Then("i check wich <hotels> are avaliable", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Find hotels with 5 Star filter on Booking")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Find hotels with Sauna filter on Booking: Limerick Strand Hotel")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "This story represents the user\'s search flow in the Booking site.")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Browser:Chrome")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("HotelList")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("5Stars")]
-        public virtual void FindHotelsWith5StarFilterOnBooking()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Sauna")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Limerick Strand Hotel")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:hotel", "Limerick Strand Hotel")]
+        public virtual void FindHotelsWithSaunaFilterOnBooking_LimerickStrandHotel()
         {
-            string[] tagsOfScenario = new string[] {
+#line 7
+this.FindHotelsWithSaunaFilterOnBooking("Limerick Strand Hotel", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Find hotels with Sauna filter on Booking: George Limerick Hotel")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "This story represents the user\'s search flow in the Booking site.")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Browser:Chrome")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Sauna")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "George Limerick Hotel")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:hotel", "George Limerick Hotel")]
+        public virtual void FindHotelsWithSaunaFilterOnBooking_GeorgeLimerickHotel()
+        {
+#line 7
+this.FindHotelsWithSaunaFilterOnBooking("George Limerick Hotel", ((string[])(null)));
+#line hidden
+        }
+        
+        public virtual void FindHotelsWith5StarFilterOnBooking(string hotel, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
                     "Browser:Chrome",
-                    "HotelList",
                     "5Stars"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Find hotels with 5 Star filter on Booking", null, new string[] {
-                        "Browser:Chrome",
-                        "HotelList",
-                        "5Stars"});
-#line 18
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Find hotels with 5 Star filter on Booking", null, @__tags);
+#line 22
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -200,29 +215,51 @@ this.ScenarioInitialize(scenarioInfo);
 #line 3
 this.FeatureBackground();
 #line hidden
-#line 20
- testRunner.When("I inform a city", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 21
- testRunner.And("i select a Checking date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 22
- testRunner.And("i select a Checkout date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 23
- testRunner.And("I press the Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
 #line 24
- testRunner.And("I select the 5 Star filter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I inform a place", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 25
- testRunner.Then("the Limerick Strand Hotel should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("i select my stay period", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 26
- testRunner.And("the George Limerick Hotel should not be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I do the search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 27
+ testRunner.And("I select the 5 Star filter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 28
+ testRunner.Then("i check wich <hotels> are avaliable", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Find hotels with 5 Star filter on Booking: The Savoy Hotel")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "This story represents the user\'s search flow in the Booking site.")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Browser:Chrome")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("5Stars")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "The Savoy Hotel")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:hotel", "The Savoy Hotel")]
+        public virtual void FindHotelsWith5StarFilterOnBooking_TheSavoyHotel()
+        {
+#line 22
+this.FindHotelsWith5StarFilterOnBooking("The Savoy Hotel", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Find hotels with 5 Star filter on Booking: George Limerick Hotel")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "This story represents the user\'s search flow in the Booking site.")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Browser:Chrome")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("5Stars")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "George Limerick Hotel")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:hotel", "George Limerick Hotel")]
+        public virtual void FindHotelsWith5StarFilterOnBooking_GeorgeLimerickHotel()
+        {
+#line 22
+this.FindHotelsWith5StarFilterOnBooking("George Limerick Hotel", ((string[])(null)));
+#line hidden
         }
     }
 }

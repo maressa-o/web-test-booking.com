@@ -6,7 +6,7 @@ namespace QATest.BookingFeature.Util
 {
     public class BaseConfig
     {
-        IWebDriver browser;
+        public IWebDriver browser;
         public void StartBrowser()
         {
             browser = new ChromeDriver("C:\\Users\\Zupper\\Desktop\\KneatTest\\QATest\\bin\\Debug");

@@ -21,54 +21,54 @@ namespace QATest.BookingFeature.Steps
             HotelList.GivenIAmInTheBookingHomePage();
         }
 
-        [When(@"I inform a city")]
-        public void WhenIInformACity()
+        [When(@"I inform a place")]
+        public void WhenIInformAPlace()
         {
-            ScenarioContext.Current.Pending();
-        }
-
-        [When(@"i select a Checking date")]
-        public void WhenISelectACheckingDate()
-        {
-            ScenarioContext.Current.Pending();
-        }
-
-        [When(@"i select a Checkout date")]
-        public void WhenISelectACheckoutDate()
-        {
-            ScenarioContext.Current.Pending();
+            HotelList.WhenIInformAPlace();
         }
 
 
-        [When(@"I press the Search button")]
-        public void WhenIPressTheSearchButton()
+        [When(@"i select my stay period")]
+        public void WhenISelectMyStayPeriod()
         {
-            ScenarioContext.Current.Pending();
+            HotelList.WhenISelectMyStayPeriod();
+        }
+        
+        [When(@"I do the search")]
+        public void WhenIDoTheSearch()
+        {
+            HotelList.WhenIDoTheSearch();
         }
 
         [When(@"I select the Sauna filter")]
         public void WhenISelectTheSaunaFilter()
         {
-            ScenarioContext.Current.Pending();
+            HotelList.WhenISelectTheSaunaFilter();
         }
 
-        [Then(@"the Limerick Strand Hotel should be visible")]
-        public void ThenTheLimerickStrandHotelShouldBeVisible()
+        [When(@"I select the 5 Star filter")]
+        public void WhenISelectThe5StarFilter()
         {
-            ScenarioContext.Current.Pending();
+            HotelList.WhenISelectThe5StarFilter();
         }
 
-        [Then(@"the George Limerick Hotel should not be visible")]
-        public void ThenTheGeorgeLimerickHotelShouldNotBeVisible()
+        [Then(@"i check wich (.*) are avaliable")]
+        public void ThenICheckWichAreAvaliable(string hotel)
         {
-            ScenarioContext.Current.Pending();
-        }
+            HotelList.ThenICheckWichAreAvaliable(hotel);
 
-        [When(@"I select the (.*) Star filter")]
-        public void WhenISelectTheStarFilter(int p0)
-        {
-            ScenarioContext.Current.Pending();
-        }
+            /*if (String.Equals(hotel, "Limerick Strand Hotel")){
+                HotelList.ThenICheckTheIfLimerickStrandHotelAreAvaliable(hotel);
+            }
 
+            if (String.Equals(hotel, "George Limerick Hotel")){
+                HotelList.ThenICheckTheIfGeorgeLimerickHotelAreAvaliable(hotel);
+            }
+
+            if (String.Equals(hotel, "Limerick Strand Hotel")){
+                HotelList.ThenICheckTheIfTheSavoyHotelAreAvaliable(hotel);
+            }*/
+
+        }
     }
 }
