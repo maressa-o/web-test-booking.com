@@ -12,19 +12,23 @@
 
 ![](project-structure.png)
 
-## Installation
+> Explaining the structure:
+  * **Implementations:** 
+      - contain the _HoteListIMPL.cs_ file, that implements all methods for the test.
+  * **Specifications:**
+      - contain the _HotelList.feature_ file that implements the BDD Structure (Cucumber) for the test.
+  * **Steps:**
+      - contain the _HotelList_Steps.cs_ file that implements the Steps for the test.
+  * **Util:**
+      - contain the BaseConfig.cs_ file that implements all the browser setup for the test.
 
-OS X & Linux:
+## Run Test
+  * Install Visual Studio 2019 or higher [(download here)](https://docs.microsoft.com/pt-br/visualstudio/?view=vs-2019).
+  * Download the project files
+  * Open the Solution Project in Visual Studio then compile the solution to generate the _.dll_ file, as show bellow:
 
-```sh
-npm install my-crazy-module --save
-```
+  ![](compile-solution.gif)
 
-Windows:
-
-```sh
-edit autoexec.bat
-```
 
 ## Usage example
 
