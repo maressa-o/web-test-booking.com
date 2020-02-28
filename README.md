@@ -2,15 +2,15 @@
 > This project includes the flow of hotels reservation on Booking.com
 
 # Project dependencies
-This project was built with:
+> This project was built with:
+   * [Selenium](https://www.selenium.dev/)
+   * [Cucumber](https://cucumber.io/)
+   * MsTest
+   
 
-[![Selenium Version][selenium-image]][selenium-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+# Project Structure
 
-One to two paragraph statement about your product and what it does.
-
-![](header.png)
+![](project-structure.png)
 
 ## Installation
 
