@@ -26,8 +26,17 @@
   * Install Visual Studio 2019 or higher [(download here)](https://docs.microsoft.com/pt-br/visualstudio/?view=vs-2019).
   * Download the project files
   * Open the Solution Project in Visual Studio then compile the solution to generate the _.dll_ file, as show bellow:
+      * With the _Solution Explorer_ window open, right click over the solution project and click over _Build_ option, and wait for the build is completed message, as follow:
+      
+      ![](compile-solution.gif)
+      
+      
+      
+      * After the build is completed
 
   ![](compile-solution.gif)
+  
+  * After compile the solution, open the test 
 
 
 ## Usage example
