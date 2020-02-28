@@ -29,7 +29,8 @@
       * With the _Solution Explorer_ window open, right click over the solution project and click over _Build_ option, and wait for the build is completed message:
  
 ![](compile-solution.png)
-    * After the build is completed, open the _Test Explrer_ window ( go to Teste > Windows > Test Explorer) and click _Run All_. Then all scenarios tests should be executed. 
+
+* After the build is completed, open the _Test Explrer_ window ( go to Teste > Windows > Test Explorer) and click _Run All_. Then all scenarios tests should be executed. 
 
 ![](test-explorer.png)
 * When the execution is finished and green icons are visible, the tests were run successfully 
